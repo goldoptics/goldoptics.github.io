@@ -159,3 +159,21 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+.footer {
+  background-color: #111;
+  color: gold;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 14px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.footer a {
+  color: #f0d070;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
