@@ -255,3 +255,15 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* شفافية سوداء للخلفية */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+}
