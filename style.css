@@ -10,3 +10,25 @@ body {
     height: auto;
     margin-bottom: 20px;
 }
+.hero {
+  background-color: #000;
+  color: gold;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .logo {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #f0d070;
+}
