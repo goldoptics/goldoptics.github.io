@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: gold;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
