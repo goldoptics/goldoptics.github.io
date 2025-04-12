@@ -1,32 +1,13 @@
 body {
+    background-color: #000;
+    color: gold;
     font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
     direction: rtl;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
 }
-header {
-    background-color: #000;
-    color: gold;
-    text-align: center;
-    padding: 20px;
-}
-.logo {
-    width: 100px;
-}
-.intro, .products {
-    padding: 20px;
-    text-align: center;
-}
-.gallery img {
-    width: 200px;
-    margin: 10px;
-    border: 2px solid #ccc;
-}
-footer {
-    background-color: #000;
-    color: gold;
-    text-align: center;
-    padding: 10px;
+
+header img {
+    width: 150px;
+    margin-bottom: 20px;
 }
