@@ -79,3 +79,32 @@ body {
   margin-bottom: 15px;
   font-family: 'Cairo', sans-serif;
 }
+.testimonials {
+  background-color: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  color: gold;
+  margin-bottom: 40px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.testimonial {
+  background-color: #222;
+  color: #f0d070;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
