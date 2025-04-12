@@ -32,3 +32,24 @@ body {
   font-size: 18px;
   color: #f0d070;
 }
+.about {
+  background-color: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  color: gold;
+  margin-bottom: 20px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.about p {
+  font-size: 18px;
+  color: #f0d070;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-family: 'Cairo', sans-serif;
+}
