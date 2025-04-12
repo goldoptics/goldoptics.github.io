@@ -245,17 +245,7 @@ body {
   width: 100%;
   height: auto;
 }
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-}
+
 .hero-content {
   background-color: rgba(0, 0, 0, 0.5); /* شفافية سوداء للخلفية */
   padding: 20px;
