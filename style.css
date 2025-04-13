@@ -269,3 +269,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.hero {
+  position: relative;
+  color: white;
+  height: 100vh; /* يأخذ ارتفاع الشاشة */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* تغطي المساحة بشكل متوازن */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
