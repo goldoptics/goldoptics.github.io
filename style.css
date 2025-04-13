@@ -527,3 +527,10 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
 }
+footer {
+  animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
