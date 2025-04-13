@@ -134,7 +134,7 @@ input[type="submit"]:hover {
   background-color: #c9a134;
 }
 #services {
-  background-image: url('services-background.png');
+  background-image: url('https://goldoptics.github.io/services-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
