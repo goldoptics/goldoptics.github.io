@@ -143,3 +143,12 @@ input[type="submit"]:hover {
   color: white;
   text-align: center;
 }
+#services {
+  background-image: url('services-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
