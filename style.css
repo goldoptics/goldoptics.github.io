@@ -295,3 +295,31 @@ body {
   left: 0;
   z-index: -1;
 }
+.hero {
+  background-image: url('your-image.jpg');
+  background-size: cover; /* تغطي كل الشاشة */
+  background-position: center; /* تتوسّط */
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero-content {
+  color: white;
+  max-width: 90%;
+  background-color: rgba(0, 0, 0, 0.4); /* تباين بسيط للنص */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* تحسين إضافي للموبايل */
+@media (max-width: 768px) {
+  .hero-content {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
