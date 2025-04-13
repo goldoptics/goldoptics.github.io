@@ -50,3 +50,30 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % testimonials.length;
   showTestimonial(currentIndex);
 }, 5000);
+// سلايدر آراء الزبائن
+const testimonials = document.querySelectorAll('.testimonial');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let current = 0;
+
+function showTestimonial(index) {
+  testimonials.forEach((t, i) => {
+    t.classList.remove('active');
+    if (i === index) {
+      t.classList.add('active');
+    }
+  });
+}
+
+prevBtn.addEventListener('click', () => {
+  current = (current - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(current);
+});
+
+nextBtn.addEventListener('click', () => {
+  current = (current + 1) % testimonials.length;
+  showTestimonial(current);
+});
+
+// أول واحد يظهر
+showTestimonial(current);
