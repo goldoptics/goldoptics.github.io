@@ -23,3 +23,30 @@ console.log("مرحباً بك في موقع نظارات الذهب");
     });
   });
 </script>
+let currentIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+function showTestimonial(index) {
+  testimonials.forEach((t, i) => {
+    t.classList.remove('active');
+    if (i === index) t.classList.add('active');
+  });
+}
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(currentIndex);
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(currentIndex);
+});
+
+// Auto slide every 5 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(currentIndex);
+}, 5000);
