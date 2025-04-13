@@ -121,3 +121,15 @@ a:hover {
 section {
   padding: 40px 20px;
 }
+input[type="submit"] {
+  background-color: #D4AF37;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #c9a134;
+}
