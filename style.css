@@ -482,3 +482,39 @@ body {
 .slider-controls span:hover {
   color: white;
 }
+#testimonials {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #111;
+  color: gold;
+}
+
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.slider-controls {
+  margin-top: 15px;
+}
+
+.slider-controls button {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
