@@ -712,3 +712,40 @@ footer {
   color: #FFD700;
   transform: scale(1.05);
 }
+.services-section-with-bg {
+  background-image: url('images/gold-glasses-display.jpg'); /* استبدل بالاسم الصحيح للصورة */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.services-section-with-bg .overlay {
+  background: rgba(0, 0, 0, 0.7); /* تغطية سوداء شفافة */
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.services-section-with-bg h2 {
+  font-size: 32px;
+  color: #FFD700;
+  margin-bottom: 30px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list li {
+  font-size: 22px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.services-list li:hover {
+  color: #FFD700;
+}
