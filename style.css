@@ -373,3 +373,56 @@ body {
 #contact-form button[type="submit"]:hover {
   background-color: #d4af37;
 }
+/* تصميم الأزرار */
+.feedback-buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.feedback-btn {
+  background-color: gold;
+  color: black;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.feedback-btn:hover {
+  background-color: #d4af37;
+}
+
+/* تصميم قسم تعليقات الزبائن */
+.customer-comments {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.customer-comments h2 {
+  color: gold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.customer-comments .comment {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+.customer-comments .comment span {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 14px;
+  text-align: right;
+}
