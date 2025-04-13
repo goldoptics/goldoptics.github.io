@@ -100,3 +100,6 @@ body {
 .slider-controls span:hover {
   color: white;
 }
+git add style.css
+git commit -m "تحديث الألوان والتدرجات"
+git push
