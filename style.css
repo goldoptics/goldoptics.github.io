@@ -788,3 +788,11 @@ footer {
 .services-list li:hover {
   color: #FFD700;
 }
+#services {
+  background-image: url('services-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+}
