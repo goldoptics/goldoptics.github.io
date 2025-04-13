@@ -103,3 +103,21 @@ body {
 git add style.css
 git commit -m "تحديث الألوان والتدرجات"
 git push
+input[type="submit"] {
+  background-color: #D4AF37;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+a:hover {
+  color: #D4AF37;
+}
+section {
+  padding: 40px 20px;
+}
