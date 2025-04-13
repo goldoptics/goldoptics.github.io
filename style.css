@@ -633,3 +633,7 @@ footer {
   background: rgba(0, 0, 0, 0.4); /* يعتم الخلفية */
   z-index: 1;
 }
+.gold-text {
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
