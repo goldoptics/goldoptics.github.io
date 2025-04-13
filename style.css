@@ -334,3 +334,42 @@ body {
 #contact-form button:hover {
   background-color: #d4af37;
 }
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: transparent;
+  direction: rtl;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#contact-form button[type="submit"] {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #d4af37;
+}
