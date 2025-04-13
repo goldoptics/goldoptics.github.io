@@ -315,3 +315,25 @@ body {
     padding: 15px;
   }
 }
+.fancy-text {
+  font-size: 32px;
+  color: #FFD700; /* ذهبي */
+  font-weight: bold;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  animation: fadeInText 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fancy-subtext {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  animation: fadeInText 2.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
