@@ -263,3 +263,9 @@ body {
     font-size: 18px;
   }
 }
+.hero {
+  background-image: url('goldoptics_hero_clean.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
