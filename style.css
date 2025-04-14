@@ -328,3 +328,24 @@ body {
     background-repeat: no-repeat;
     height: 100vh; /* أو أي ارتفاع مناسب */
 }
+.hero {
+  background-image: url('goldoptics_hero_clean.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh; /* بدل height حتى يشتغل تمام على الموبايل */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* تخصيص العرض للهواتف */
+@media (max-width: 768px) {
+  .hero {
+    background-position: top center;
+    /* وإذا حبيت تستخدم contain بدل cover حتى تبين كل الصورة بدون قص، استخدم السطر الجاي بدل فوق */
+    /* background-size: contain; */
+  }
+}
