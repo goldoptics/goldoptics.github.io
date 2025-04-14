@@ -311,3 +311,10 @@ body {
 .gold-text {
   color: #FFD700;
 }
+.gold-text {
+  background: linear-gradient(90deg, #FFD700, #fff, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+}
