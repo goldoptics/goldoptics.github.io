@@ -321,3 +321,10 @@ body {
     background-position: -200% center;
   }
 }
+.hero-section {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* أو أي ارتفاع مناسب */
+}
