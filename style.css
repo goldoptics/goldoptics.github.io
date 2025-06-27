@@ -242,3 +242,36 @@ footer a {
     max-width: 220px;
   }
 }
+.hero-button {
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  padding: 14px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px #FFD700;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+}
+
+/* رفرفة خفيفة على الموبايل */
+@media (max-width: 768px) {
+  .hero-button {
+    animation: flutter 1.8s infinite ease-in-out;
+  }
+}
+
+@keyframes flutter {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
