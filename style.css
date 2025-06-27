@@ -1,6 +1,6 @@
 /* إعداد عام */
 body {
-  background-color: #0e2c2c; /* اللون الأزرق الداكن */
+  background-color: #0e2c2c;
   color: #f9e29c;
   font-family: 'Cairo', sans-serif;
   margin: 0;
@@ -27,9 +27,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* منطقة الهيرو */
-.hero {
-  background-image: url('goldoptics_hero_clean.jpeg');
+/* قسم الهيرو */
+.hero-section {
+  background-image: url('hero.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,27 +37,90 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero-box {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 700px;
-}
-
-.hero-box h1 {
+  position: relative;
+  text-align: center;
   color: white;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
   font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: -30px;
+  color: #fff;
 }
 
-.hero-box p {
-  color: #FFD700;
+.hero-section p {
   font-size: 20px;
-  margin-top: 15px;
+  color: #ffd700;
+  margin-bottom: 20px;
 }
 
-/* الأقسام */
+.hero-button {
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  padding: 14px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 10px #FFD700;
+  animation: pulse 2.5s infinite;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+}
+
+/* حركة رفرفة خفيفة */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* تحسين العرض على الموبايل */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 26px;
+    margin-top: -20px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 80%;
+    max-width: 250px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* الأقسام الأخرى */
 section {
   padding: 60px 20px;
 }
@@ -86,216 +149,4 @@ footer a {
   color: #0e2c2c;
   text-decoration: none;
   margin: 0 8px;
-}
-.hero-section {
-  background-image: url('hero.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  color: white;
-}
-
-.hero-section h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.hero-section p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #ffd700;
-}
-
-.hero-section .hero-button {
-  padding: 10px 25px;
-  background-color: #004080;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.hero-section {
-  background-image: url('hero.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* تغطية داكنة */
-}
-
-.hero-section div {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-section img {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.hero-section h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.hero-section p {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.hero-button {
-  background-color: #d4af37;
-  color: #000;
-  padding: 10px 25px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-}
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .hero-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 80%;
-    max-width: 250px;
-  }
-
-  .main-nav ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 0;
-  }
-
-  .main-header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 30px 15px;
-    text-align: center;
-  }
-
-  .hero-section img {
-    max-width: 100px;
-    margin-bottom: 10px;
-  }
-
-  .hero-section h1 {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-
-  .hero-section p {
-    font-size: 16px;
-    margin-bottom: 16px;
-    color: #ffd700;
-  }
-
-  .hero-button {
-    font-size: 16px;
-    padding: 12px 20px;
-    background-color: #003366;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    width: 80%;
-    max-width: 220px;
-  }
-}
-.hero-button {
-  background-color: #FFD700;
-  color: black;
-  font-weight: bold;
-  padding: 14px 28px;
-  font-size: 18px;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 10px #FFD700;
-}
-
-.hero-button:hover {
-  transform: scale(1.05);
-}
-
-/* رفرفة خفيفة على الموبايل */
-@media (max-width: 768px) {
-  .hero-button {
-    animation: flutter 1.8s infinite ease-in-out;
-  }
-}
-
-@keyframes flutter {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-3px);
-  }
-}
-.hero-button {
-  background-color: #d4af37; /* لون ذهبي */
-  color: #000; /* نص غامق */
-}
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-.hero-button {
-  animation: pulse 2.5s infinite;
-}
-.hero-button {
-  padding: 14px 28px;
-  font-size: 1.2em;
-  border-radius: 8px;
-}
-.hero-title {
-  font-size: 32px;         /* تكبير الخط */
-  margin-bottom: 10px;     /* مسافة بين العنوان والنص */
-  margin-top: -30px;       /* رفع العنوان للأعلى */
-  font-weight: bold;
 }
