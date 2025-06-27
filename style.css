@@ -208,3 +208,37 @@ footer a {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .hero-section img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #ffd700;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 220px;
+  }
+}
