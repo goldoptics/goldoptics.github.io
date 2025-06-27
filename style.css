@@ -1,12 +1,33 @@
+/* إعداد عام */
 body {
-  margin: 0;
-  background-color: #1a1a1a;
-  color: gold;
+  background-color: #0e2c2c; /* اللون الأزرق الداكن */
+  color: #f9e29c;
   font-family: 'Cairo', sans-serif;
-  direction: rtl;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
+/* شريط التنقل */
+nav {
+  background-color: #f9e29c;
+  color: #0e2c2c;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+nav a {
+  color: #0e2c2c;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* منطقة الهيرو */
 .hero {
   background-image: url('goldoptics_hero_clean.jpeg');
   background-size: cover;
@@ -18,36 +39,51 @@ body {
   justify-content: center;
 }
 
-.hero-content {
+.hero-box {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
+  max-width: 700px;
 }
 
-h1 {
-  font-size: 28px;
+.hero-box h1 {
   color: white;
+  font-size: 36px;
 }
 
-.cta-button {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 25px;
-  background-color: gold;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.hero-box p {
+  color: #FFD700;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
-.cta-button:hover {
-  background-color: #d4af37;
+/* الأقسام */
+section {
+  padding: 60px 20px;
 }
 
-.footer {
-  background-color: #000;
+section h2 {
+  color: #f9e29c;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+section p, li {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* الفوتر */
+footer {
+  background-color: #f9e29c;
+  color: #0e2c2c;
   padding: 20px;
-  color: gold;
-  font-size: 14px;
-  border-top: 1px solid gold;
+  font-size: 16px;
+}
+
+footer a {
+  color: #0e2c2c;
+  text-decoration: none;
+  margin: 0 8px;
 }
