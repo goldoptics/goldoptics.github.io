@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: #1a1a1a;
+  color: gold;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  text-align: center;
+}
+
+.hero {
+  background-image: url('goldoptics_hero_clean.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  color: white;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #d4af37;
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  color: gold;
+  font-size: 14px;
+  border-top: 1px solid gold;
+}
