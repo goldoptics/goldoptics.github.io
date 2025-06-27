@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="hero">
+  <!-- الهيدر -->
+  <header class="hero">
     <div class="hero-content">
-      <h1 class="gold-text">آراء الزبائن</h1>
+      <h1 class="fancy-text">آراء الزبائن</h1>
+      <p class="fancy-subtext">ماذا يقول عملاؤنا عن تجربتهم معنا؟</p>
     </div>
-  </div>
+  </header>
 
+  <!-- محتوى آراء الزبائن -->
   <section class="testimonials">
-    <h2>ماذا قالوا عنا؟</h2>
-
+    <h2>مراجعات حقيقية من زبائننا</h2>
     <div class="testimonial-slider">
       <div class="testimonial active">
         <p>"خدمة ممتازة وفحص دقيق. أنصح الجميع بزيارة المعرض"</p>
@@ -31,42 +32,48 @@
         <span>- رنا، زيونه</span>
       </div>
     </div>
-
     <div class="slider-controls">
       <button class="prev">‹</button>
       <button class="next">›</button>
     </div>
   </section>
 
+  <!-- الفوتر -->
   <footer class="footer">
     <p>فرع زيونه – دريم ستي مول – الطابق الأول</p>
     <p>فرع الجادرية – الجادرية مول – الطابق الثاني</p>
-    <p>واتساب: <a href="tel:07744447728">07744447728</a></p>
-    <p>إيميل: <a href="mailto:info@goldoptics.store">info@goldoptics.store</a></p>
+    <p>الهاتف وواتساب: <a href="tel:07744447728">07744447728</a> | الإيميل: <a href="mailto:info@goldoptics.store">info@goldoptics.store</a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/gold.optics.opt/" target="_blank">انستغرام</a> |
+      <a href="https://www.facebook.com/share/16CAxkLtEG/?mibextid=wwXIfr" target="_blank">فيسبوك</a> |
+      <a href="https://www.tiktok.com/@gold.optics.opt?_t=ZS-8vOx0OiCnI7&_r=1" target="_blank">تيك توك</a>
+    </div>
+    <p style="margin-top: 15px;">تصميم وتطوير بالتعاون مع <strong>أخصائي البصريات حارث عامر</strong></p>
   </footer>
 
   <script>
-    const testimonials = document.querySelectorAll('.testimonial');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    let currentIndex = 0;
+    const testimonials = document.querySelectorAll(".testimonial");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let index = 0;
 
-    function showTestimonial(index) {
-      testimonials.forEach((t, i) => {
-        t.classList.toggle('active', i === index);
+    function showTestimonial(i) {
+      testimonials.forEach((t, idx) => {
+        t.classList.toggle("active", idx === i);
       });
     }
 
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-      showTestimonial(currentIndex);
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(index);
     });
 
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      showTestimonial(currentIndex);
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % testimonials.length;
+      showTestimonial(index);
     });
+
+    showTestimonial(index);
   </script>
-
 </body>
 </html>
