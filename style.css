@@ -174,3 +174,37 @@ footer a {
   font-weight: bold;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
