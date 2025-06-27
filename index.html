@@ -5,45 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>نظارات الذهب</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #002222;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero {
+      background: url('background.jpg') no-repeat center center/cover;
+      padding: 100px 20px 80px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      margin-top: -30px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ffd700;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      background-color: #d4af37;
+      color: #000;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      animation: pulse 1.5s infinite;
+    }
+
+    .cta-button img {
+      width: 22px;
+      height: 22px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .main-header {
+      background-color: #f6e6b4;
+      padding: 20px 0;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .main-nav ul li a {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .cta-button {
+        padding: 12px 20px;
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="hero-content">
-  <h1 class="hero-title">نظارات الذهب</h1>
-  <p>الوضوح رفاهية... ونحن نقدّمها لك بامتياز</p>
-  <a href="https://wa.me/9647744447728" class="hero-button">
-  <span>احجز الآن</span>
-  <img src="whatsapp-icon.png" alt="واتساب" class="whatsapp-icon">
-</a>
-</div>
-</section>
-
-  <!-- 🔷 الهيدر - شريط التنقل -->
-  <header class="main-header">
-    <div class="container">
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html" class="active">الرئيسية</a></li>
-          <li><a href="about.html">من نحن</a></li>
-          <li><a href="services.html">خدماتنا</a></li>
-          <li><a href="testimonials.html">آراء الزبائن</a></li>
-          <li><a href="contact.html">اتصل بنا</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
   <!-- 🔷 قسم البطل -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>الوُضوح رفاهية ونحن نُقدّمها لك بامتياز</h1>
-      <p>مرحباً بكم في نظارات الذهب</p>
-      <a href="https://wa.me/9647744447728" class="cta-button">احجز موعدك الآن</a>
-    </div>
+    <h1>نظارات الذهب</h1>
+    <p>الوضوح رفاهية... ونحن نقدّمها لك بامتياز</p>
+    <a href="https://wa.me/9647744447728" class="cta-button">
+      <span>احجز الآن</span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">
+    </a>
   </section>
+
+  <!-- 🔷 الهيدر - شريط التنقل -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="testimonials.html">آراء الزبائن</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- 🔷 الفوتر -->
   <footer class="footer">
-    <p>تصميم وتطوير بالتعاون مع <strong>اخصائي البصريات حارث عامر</strong></p>
+    <p>تصميم وتطوير بالتعاون مع <strong>أخصائي البصريات حارث عامر</strong></p>
   </footer>
 
 </body>
