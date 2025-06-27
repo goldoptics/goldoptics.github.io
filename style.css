@@ -191,3 +191,17 @@ footer a {
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* ظل للوضوح */
 }
+.hero-title {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* ظل غامق يبرز النص */
+}
+
+.hero p {
+  color: #ffd700;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* ظل لتمييز النص */
+}
