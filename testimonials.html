@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>آراء الزبائن - نظارات الذهب</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- واجهة الصفحة -->
+  <header class="hero">
+    <div class="overlay-text">
+      <h1 class="gold-text">آراء الزبائن</h1>
+      <p class="fancy-subtext">ثقتكم مصدر فخرنا</p>
+    </div>
+  </header>
+
+  <!-- قسم الآراء -->
+  <section class="testimonials">
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"خدمة ممتازة وفحص دقيق. أنصح الجميع بزيارة المعرض"</p>
+        <span>- زينب، بغداد</span>
+      </div>
+      <div class="testimonial">
+        <p>"أحلى تعامل وأسعار مناسبة، شكراً نظارات الذهب"</p>
+        <span>- أحمد، بغداد</span>
+      </div>
+      <div class="testimonial">
+        <p>"استلمت نظارتي بسرعة وبجودة ممتازة جداً!"</p>
+        <span>- رنا، زيونه</span>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <p>فرع زيونه – دريم ستي مول – الطابق الأول</p>
+    <p>فرع الجادرية – الجادرية مول – الطابق الثاني</p>
+    <p>الهاتف وواتساب: <a href="tel:07744447728" style="color:gold;">07744447728</a></p>
+    <p>البريد الإلكتروني: <a href="mailto:info@goldoptics.store" style="color:gold;">info@goldoptics.store</a></p>
+    <p>تصميم وتطوير بالتعاون مع <strong>أخصائي البصريات حارث عامر</strong></p>
+  </footer>
+
+  <script>
+    const testimonials = document.querySelectorAll(".testimonial");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let currentIndex = 0;
+
+    function showTestimonial(index) {
+      testimonials.forEach((testimonial, i) => {
+        testimonial.classList.toggle("active", i === index);
+      });
+    }
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentIndex);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      showTestimonial(currentIndex);
+    });
+
+    showTestimonial(currentIndex);
+  </script>
+
+</body>
+</html>
