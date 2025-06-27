@@ -7,73 +7,40 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- الهيدر -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1 class="fancy-text">آراء الزبائن</h1>
-      <p class="fancy-subtext">ماذا يقول عملاؤنا عن تجربتهم معنا؟</p>
-    </div>
-  </header>
 
-  <!-- محتوى آراء الزبائن -->
-  <section class="testimonials">
-    <h2>مراجعات حقيقية من زبائننا</h2>
-    <div class="testimonial-slider">
-      <div class="testimonial active">
-        <p>"خدمة ممتازة وفحص دقيق. أنصح الجميع بزيارة المعرض"</p>
-        <span>- زينب، بغداد</span>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>آراء الزبائن</h1>
+      <div class="testimonial">
+        <p>"خدمة ممتازة وفحص دقيق. أنصح الجميع بزيارة المعرض."</p>
+        <span>- زينب من بغداد</span>
       </div>
       <div class="testimonial">
-        <p>"أحلى تعامل وأسعار مناسبة، شكراً نظارات الذهب"</p>
-        <span>- أحمد، بغداد</span>
+        <p>"أحلى تعامل وأسعار مناسبة، شكراً نظارات الذهب!"</p>
+        <span>- أحمد من بغداد</span>
       </div>
       <div class="testimonial">
         <p>"استلمت نظارتي بسرعة وبجودة ممتازة جداً!"</p>
-        <span>- رنا، زيونه</span>
+        <span>- رنا من زيونه</span>
       </div>
     </div>
-    <div class="slider-controls">
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </div>
-  </section>
+  </div>
 
-  <!-- الفوتر -->
   <footer class="footer">
-    <p>فرع زيونه – دريم ستي مول – الطابق الأول</p>
-    <p>فرع الجادرية – الجادرية مول – الطابق الثاني</p>
-    <p>الهاتف وواتساب: <a href="tel:07744447728">07744447728</a> | الإيميل: <a href="mailto:info@goldoptics.store">info@goldoptics.store</a></p>
+    <p>الهاتف وواتساب: <a href="tel:07744447728">07744447728</a></p>
+    <p>الإيميل: <a href="mailto:info@goldoptics.store">info@goldoptics.store</a></p>
+    <p>
+      العنوان:<br>
+      فرع زيونه – دريم ستي مول – الطابق الأول<br>
+      فرع الجادرية – الجادرية مول – الطابق الثاني
+    </p>
     <div class="social-icons">
-      <a href="https://www.instagram.com/gold.optics.opt/" target="_blank">انستغرام</a> |
+      <a href="https://www.instagram.com/gold.optics.opt/" target="_blank">إنستغرام</a> |
       <a href="https://www.facebook.com/share/16CAxkLtEG/?mibextid=wwXIfr" target="_blank">فيسبوك</a> |
       <a href="https://www.tiktok.com/@gold.optics.opt?_t=ZS-8vOx0OiCnI7&_r=1" target="_blank">تيك توك</a>
     </div>
-    <p style="margin-top: 15px;">تصميم وتطوير بالتعاون مع <strong>أخصائي البصريات حارث عامر</strong></p>
+    <p style="margin-top: 10px;">تصميم وتطوير بالتعاون مع <strong>أخصائي البصريات حارث عامر</strong></p>
   </footer>
 
-  <script>
-    const testimonials = document.querySelectorAll(".testimonial");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-    let index = 0;
-
-    function showTestimonial(i) {
-      testimonials.forEach((t, idx) => {
-        t.classList.toggle("active", idx === i);
-      });
-    }
-
-    prevBtn.addEventListener("click", () => {
-      index = (index - 1 + testimonials.length) % testimonials.length;
-      showTestimonial(index);
-    });
-
-    nextBtn.addEventListener("click", () => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    });
-
-    showTestimonial(index);
-  </script>
 </body>
 </html>
